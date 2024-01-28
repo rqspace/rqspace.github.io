@@ -6,13 +6,20 @@
     <style>
       img {width: 500px;}
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
   </head>
   <body>
     <p>html测试</p>
+    <h1>打开md，但是上面有网站名</h1>
     <p><a href="/md">访问md文件夹的方式：/md</a></p>
     <p><a href="/md/demo">访问deom.md文件的方式：/md/demo</a></p>
     <div>
       <img src="/1.jpg">
-    </div>    
+    </div>
+    <script>
+      let converter = new showdown.Converter(),
+      text      = '# hello, markdown!',
+      document.body.innerHTML      = converter.makeHtml(text);
+    </script>
   </body>
 </html>
