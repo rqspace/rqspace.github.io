@@ -20,6 +20,7 @@
       let converter = new showdown.Converter(),
       text      = '# hello, markdown!',
       html      = converter.makeHtml(text);
+      document.body.innerHTML= html
     </script>
   </body>
 </html>
