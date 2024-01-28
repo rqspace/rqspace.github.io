@@ -1,3 +1,4 @@
-#md测试
-[demo.md](https://rqspace.github.io/md/demo.md)
-[/demo](https://rqspace.github.io/md/demo)
+# readme文件
+html.md和readme.md文件不能通过路径读取
+[demo.md](./demo.md)
+[/demo](./demo)
