@@ -17,10 +17,14 @@
       <img src="/1.jpg">
     </div>
     <script>
-      let converter = new showdown.Converter(),
-      text      = '# hello, markdown!',
-      html      = converter.makeHtml(text);
-      document.body.innerHTML= html
+      let converter = new showdown.Converter()
+      fetch('/vue.md')
+      .then(res => res.text())
+      .then(data => {
+          text      = data
+          html      = converter.makeHtml(text)
+          document.body.innerHTML= html
+      })
     </script>
   </body>
 </html>
