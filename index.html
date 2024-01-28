@@ -17,13 +17,13 @@
       <img src="/1.jpg">
     </div>
     <script>
+      //避免直接打开md上面显示网站名，同时可以内嵌到网页中
       let converter = new showdown.Converter()
       fetch('/vue.md')
       .then(res => res.text())
       .then(data => {
-          text      = data
-          html      = converter.makeHtml(text)
-          document.body.innerHTML= html
+          let text= data
+          document.body.innerHTML = converter.makeHtml(text) + '<style>img{width: 100%!important}</style>'
       })
     </script>
   </body>
