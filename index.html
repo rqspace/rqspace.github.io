@@ -6,6 +6,7 @@
     <style>
       img {width: 500px;}
       main { width: 80%; margin:0 auto;}
+      main img {width: 100%}
     </style>
     <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <!--     <script src="https://cdn.jsdelivr.net/npm/showdown"></script> -->
@@ -17,6 +18,7 @@
     <p><a href="/md/demo">访问deom.md文件的方式：/md/demo</a></p>
     <div>
       <img src="/1.jpg">
+      <img src="https://g-lthz0849.coding.net/p/example-project/d/java-spring-example/git/raw/master/1.jpg">
     </div>
     <main></main>
     <script>
@@ -25,7 +27,7 @@
       fetch('/vue.md')
       .then(res => res.text())
       .then(data => {
-          document.querySelector('main').innerHTML = converter.makeHtml(data) + '<style>img{width: 100%!important}</style>'
+          document.querySelector('main').innerHTML = converter.makeHtml(data)
       })
     </script>
   </body>
