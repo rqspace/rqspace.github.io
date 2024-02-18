@@ -20,6 +20,6 @@ async function start() {
     console.log('更新博客链接成功');
     
     const hotboard = await fetch('https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc').then(res=> res.text());
-    const readme = await fs.writeFile('./json/tt-hotboard.json', hotboard);
+    await fs.writeFile('./json/tt-hotboard.json', hotboard);
 }
 start();
