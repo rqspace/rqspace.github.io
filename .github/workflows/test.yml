@@ -2,7 +2,7 @@ name: Blog
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0/10 * * * *" ## 注意，GitHub Action的时区为UTC+0，与北京时间（UTC+8）存在时差，所以需要换算下时间。
+    - cron: "0 0/72 * * *" ## 注意，GitHub Action的时区为UTC+0，与北京时间（UTC+8）存在时差，所以需要换算下时间。
 jobs:
   blog:
     name: Blog
