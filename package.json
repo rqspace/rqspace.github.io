@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CaoMeiYouRen/CaoMeiYouRen.git"
+    "url": "git+https://github.com/rqspace/rqspace.github.io.git"
   },
   "keywords": [],
   "author": "CaoMeiYouRen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CaoMeiYouRen/CaoMeiYouRen/issues"
+    "url": "https://github.com/rqspace/rqspace.github.io/issues"
   },
-  "homepage": "https://github.com/CaoMeiYouRen/CaoMeiYouRen#readme",
+  "homepage": "https://github.com/rqspace/rqspace.github.io#readme",
   "dependencies": {
     "fs-extra": "^11.1.1",
     "rss-parser": "^3.13.0"
