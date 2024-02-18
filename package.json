@@ -1,0 +1,13 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "rss-parser": "^3.13.0"
+  }
+}
